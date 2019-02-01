@@ -33,14 +33,25 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.reqLink = new System.Windows.Forms.Label();
             this.ceezLink = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label42 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.timerBox = new System.Windows.Forms.Panel();
+            this.timer = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label46 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.totalPoints = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.timer = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label43 = new System.Windows.Forms.Label();
             this.hotkeyPanel = new System.Windows.Forms.Panel();
             this.label41 = new System.Windows.Forms.Label();
@@ -56,6 +67,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.rulesPanel = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.rulesLabel = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.startButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,15 +79,43 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.homePanel = new System.Windows.Forms.Panel();
+            this.maxteamsPanel = new System.Windows.Forms.Panel();
+            this.specialCombo = new System.Windows.Forms.ComboBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.cannonCombo = new System.Windows.Forms.ComboBox();
+            this.bananaCombo = new System.Windows.Forms.ComboBox();
+            this.planksCombo = new System.Windows.Forms.ComboBox();
+            this.tntCombo = new System.Windows.Forms.ComboBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.teamsPanel = new System.Windows.Forms.Panel();
+            this.teamStartButton = new System.Windows.Forms.Button();
+            this.teamBox = new System.Windows.Forms.ComboBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.specialCannon = new System.Windows.Forms.CheckBox();
             this.label44 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.pugsSub = new System.Windows.Forms.Button();
+            this.cannonCheck = new System.Windows.Forms.CheckBox();
             this.pigsAdd = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
             this.snakeSub = new System.Windows.Forms.Button();
+            this.bananaCheck = new System.Windows.Forms.CheckBox();
             this.snakeAdd = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
             this.chickenSub = new System.Windows.Forms.Button();
+            this.plankCheck = new System.Windows.Forms.CheckBox();
             this.chickenAdd = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
             this.deathSub = new System.Windows.Forms.Button();
+            this.tntCheck = new System.Windows.Forms.CheckBox();
             this.deathAdd = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
             this.ownSub = new System.Windows.Forms.Button();
             this.ownAdd = new System.Windows.Forms.Button();
             this.sellSub = new System.Windows.Forms.Button();
@@ -94,19 +137,8 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.resetButton = new System.Windows.Forms.Button();
-            this.label33 = new System.Windows.Forms.Label();
-            this.specialCannon = new System.Windows.Forms.CheckBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.cannonCheck = new System.Windows.Forms.CheckBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.bananaCheck = new System.Windows.Forms.CheckBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.plankCheck = new System.Windows.Forms.CheckBox();
-            this.label29 = new System.Windows.Forms.Label();
             this.nonTNTCheck = new System.Windows.Forms.CheckBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.tntCheck = new System.Windows.Forms.CheckBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.mbCheck = new System.Windows.Forms.CheckBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -136,34 +168,27 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panelLeftTimer = new System.Windows.Forms.Timer(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.rulesLabel = new System.Windows.Forms.Label();
+            this.crierCountLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.timerBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.hotkeyPanel.SuspendLayout();
             this.rulesPanel.SuspendLayout();
-            this.homePanel.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.homePanel.SuspendLayout();
+            this.maxteamsPanel.SuspendLayout();
+            this.teamsPanel.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.reqLink);
             this.panel1.Controls.Add(this.ceezLink);
             this.panel1.Controls.Add(this.button5);
@@ -207,6 +232,60 @@
             this.ceezLink.MouseLeave += new System.EventHandler(this.ceezLink_MouseLeave);
             this.ceezLink.MouseHover += new System.EventHandler(this.ceezLink_MouseHover);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(-1, 249);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(222, 72);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Hotkeys";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::ThePirateGames.Properties.Resources.rulesicon;
+            this.button4.Location = new System.Drawing.Point(0, 171);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(222, 72);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Rules";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::ThePirateGames.Properties.Resources.homeIcon;
+            this.button1.Location = new System.Drawing.Point(0, 93);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(222, 72);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Home";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -216,8 +295,17 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(218, 87);
+            this.panel3.Size = new System.Drawing.Size(220, 87);
             this.panel3.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ThePirateGames.Properties.Resources.pirateLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(71, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 79);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label42
             // 
@@ -240,6 +328,8 @@
             // timerBox
             // 
             this.timerBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.timerBox.Controls.Add(this.hotkeyPanel);
+            this.timerBox.Controls.Add(this.timer);
             this.timerBox.Controls.Add(this.button3);
             this.timerBox.Controls.Add(this.label46);
             this.timerBox.Controls.Add(this.button2);
@@ -249,13 +339,79 @@
             this.timerBox.Controls.Add(this.label15);
             this.timerBox.Controls.Add(this.totalPoints);
             this.timerBox.Controls.Add(this.label6);
-            this.timerBox.Controls.Add(this.timer);
+            this.timerBox.Controls.Add(this.pictureBox4);
             this.timerBox.Controls.Add(this.label43);
             this.timerBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.timerBox.Location = new System.Drawing.Point(222, 414);
             this.timerBox.Name = "timerBox";
             this.timerBox.Size = new System.Drawing.Size(867, 230);
             this.timerBox.TabIndex = 1;
+            // 
+            // timer
+            // 
+            this.timer.BackColor = System.Drawing.Color.Transparent;
+            this.timer.Font = new System.Drawing.Font("Old English Text MT", 80.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timer.Location = new System.Drawing.Point(139, 37);
+            this.timer.Name = "timer";
+            this.timer.Size = new System.Drawing.Size(446, 139);
+            this.timer.TabIndex = 1;
+            this.timer.Text = "00:00:00";
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = global::ThePirateGames.Properties.Resources.rulesIconTog;
+            this.button3.Location = new System.Drawing.Point(823, 203);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(29, 24);
+            this.button3.TabIndex = 79;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label46
+            // 
+            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label46.Location = new System.Drawing.Point(816, 207);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(1, 20);
+            this.label46.TabIndex = 78;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::ThePirateGames.Properties.Resources.audioMute;
+            this.button2.Location = new System.Drawing.Point(781, 203);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(29, 24);
+            this.button2.TabIndex = 11;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label35
+            // 
+            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label35.Location = new System.Drawing.Point(723, 198);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(250, 2);
+            this.label35.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Location = new System.Drawing.Point(495, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(330, 2);
+            this.label7.TabIndex = 12;
+            // 
+            // label34
+            // 
+            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label34.Location = new System.Drawing.Point(39, 15);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(330, 2);
+            this.label34.TabIndex = 11;
             // 
             // label15
             // 
@@ -290,14 +446,14 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "POINTS:";
             // 
-            // timer
+            // pictureBox4
             // 
-            this.timer.Font = new System.Drawing.Font("Old English Text MT", 99.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timer.Location = new System.Drawing.Point(164, 26);
-            this.timer.Name = "timer";
-            this.timer.Size = new System.Drawing.Size(593, 134);
-            this.timer.TabIndex = 1;
-            this.timer.Text = "00:00:00";
+            this.pictureBox4.Image = global::ThePirateGames.Properties.Resources.image_6_825x200;
+            this.pictureBox4.Location = new System.Drawing.Point(141, 20);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(566, 186);
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
             // 
             // label43
             // 
@@ -309,6 +465,7 @@
             // hotkeyPanel
             // 
             this.hotkeyPanel.AutoScroll = true;
+            this.hotkeyPanel.Controls.Add(this.rulesPanel);
             this.hotkeyPanel.Controls.Add(this.label41);
             this.hotkeyPanel.Controls.Add(this.label40);
             this.hotkeyPanel.Controls.Add(this.label39);
@@ -321,7 +478,7 @@
             this.hotkeyPanel.Controls.Add(this.label10);
             this.hotkeyPanel.Controls.Add(this.label9);
             this.hotkeyPanel.Controls.Add(this.label8);
-            this.hotkeyPanel.Location = new System.Drawing.Point(3, 0);
+            this.hotkeyPanel.Location = new System.Drawing.Point(766, 88);
             this.hotkeyPanel.Name = "hotkeyPanel";
             this.hotkeyPanel.Size = new System.Drawing.Size(864, 389);
             this.hotkeyPanel.TabIndex = 1;
@@ -364,7 +521,7 @@
             this.label37.ForeColor = System.Drawing.Color.White;
             this.label37.Location = new System.Drawing.Point(497, 721);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(133, 460);
+            this.label37.Size = new System.Drawing.Size(133, 480);
             this.label37.TabIndex = 7;
             this.label37.Text = resources.GetString("label37.Text");
             // 
@@ -375,11 +532,11 @@
             this.label38.ForeColor = System.Drawing.Color.White;
             this.label38.Location = new System.Drawing.Point(217, 721);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(123, 460);
+            this.label38.Size = new System.Drawing.Size(123, 480);
             this.label38.TabIndex = 6;
             this.label38.Text = "Sloop    \r\n\r\nBrig     \r\n   \r\nGalleon\r\n     \r\nMegalodon \r\n\r\nGhost Ship \r\n\r\nDeath\r\n" +
-    "\r\nOwn Ship Sunk  \r\n  \r\nCrier Chest  \r\n\r\nSellable  \r\n\r\nChicken  \r\n\r\nPig       \r\n\r" +
-    "\nSnake   ";
+    "\r\nOwn Ship Sunk  \r\n  \r\nCrier Chest  \r\n\r\nSellable  \r\n\r\nChicken\r\n  \r\nSnake   \r\n\r\nP" +
+    "ig       \r\n\r\n";
             // 
             // label21
             // 
@@ -421,11 +578,11 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(501, 134);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 460);
+            this.label10.Size = new System.Drawing.Size(95, 480);
             this.label10.TabIndex = 2;
             this.label10.Text = "SHIFT-ALT-S \r\n\r\nSHIFT-ALT-B\r\n\r\nSHIFT-ALT-G \r\n\r\nSHIFT-ALT-M \r\n\r\nSHIFT-ALT-Q \r\n\r\nSH" +
     "IFT-ALT-D \r\n\r\nSHIFT-ALT-O \r\n\r\nSHIFT-ALT-C \r\n\r\nSHIFT-ALT-L \r\n\r\nSHIFT-ALT-1 \r\n\r\nSH" +
-    "IFT-ALT-3 \r\n\r\nSHIFT-ALT-2 ";
+    "IFT-ALT-2 \r\n\r\nSHIFT-ALT-3 \r\n\r\n";
             // 
             // label9
             // 
@@ -434,11 +591,11 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(221, 134);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 460);
+            this.label9.Size = new System.Drawing.Size(115, 480);
             this.label9.TabIndex = 1;
             this.label9.Text = "Sloop   \r\n \r\nBrig     \r\n   \r\nGalleon  \r\n   \r\nMegalodon \r\n\r\nGhost Ship \r\n\r\nDeath\r\n" +
-    "\r\nOwn Ship Sunk\r\n    \r\nCrier Chest  \r\n\r\nSellable  \r\n\r\nChicken  \r\n\r\nPig    \r\n   \r" +
-    "\nSnake   ";
+    "\r\nOwn Ship Sunk\r\n    \r\nCrier Chest  \r\n\r\nSellable  \r\n\r\nChicken  \r\n\r\nSnake   \r\n\r\nP" +
+    "ig    \r\n   \r\n";
             // 
             // label8
             // 
@@ -454,15 +611,57 @@
             // rulesPanel
             // 
             this.rulesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.rulesPanel.Controls.Add(this.hotkeyPanel);
             this.rulesPanel.Controls.Add(this.pictureBox2);
+            this.rulesPanel.Controls.Add(this.pictureBox3);
             this.rulesPanel.Controls.Add(this.rulesLabel);
-            this.rulesPanel.Location = new System.Drawing.Point(0, 0);
+            this.rulesPanel.Controls.Add(this.label54);
+            this.rulesPanel.Location = new System.Drawing.Point(48, 75);
             this.rulesPanel.Name = "rulesPanel";
             this.rulesPanel.Size = new System.Drawing.Size(867, 392);
             this.rulesPanel.TabIndex = 49;
             this.rulesPanel.Visible = false;
             this.rulesPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.rulesPanel_MouseClick);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(793, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(668, 373);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ThePirateGames.Properties.Resources.rules;
+            this.pictureBox3.Location = new System.Drawing.Point(252, 74);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(353, 276);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseClick);
+            // 
+            // rulesLabel
+            // 
+            this.rulesLabel.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rulesLabel.Location = new System.Drawing.Point(334, 0);
+            this.rulesLabel.Name = "rulesLabel";
+            this.rulesLabel.Size = new System.Drawing.Size(165, 77);
+            this.rulesLabel.TabIndex = 1;
+            this.rulesLabel.Text = "Rules";
+            // 
+            // label54
+            // 
+            this.label54.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label54.Location = new System.Drawing.Point(349, 352);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(161, 30);
+            this.label54.TabIndex = 3;
+            this.label54.Text = "**Work in progress**";
             // 
             // panelLeft
             // 
@@ -540,16 +739,29 @@
             // 
             // homePanel
             // 
-            this.homePanel.Controls.Add(this.rulesPanel);
+            this.homePanel.Controls.Add(this.maxteamsPanel);
+            this.homePanel.Controls.Add(this.label47);
+            this.homePanel.Controls.Add(this.label33);
+            this.homePanel.Controls.Add(this.teamsPanel);
+            this.homePanel.Controls.Add(this.specialCannon);
             this.homePanel.Controls.Add(this.label44);
+            this.homePanel.Controls.Add(this.label32);
             this.homePanel.Controls.Add(this.pugsSub);
+            this.homePanel.Controls.Add(this.cannonCheck);
             this.homePanel.Controls.Add(this.pigsAdd);
+            this.homePanel.Controls.Add(this.label31);
             this.homePanel.Controls.Add(this.snakeSub);
+            this.homePanel.Controls.Add(this.bananaCheck);
             this.homePanel.Controls.Add(this.snakeAdd);
+            this.homePanel.Controls.Add(this.label30);
             this.homePanel.Controls.Add(this.chickenSub);
+            this.homePanel.Controls.Add(this.plankCheck);
             this.homePanel.Controls.Add(this.chickenAdd);
+            this.homePanel.Controls.Add(this.label29);
             this.homePanel.Controls.Add(this.deathSub);
+            this.homePanel.Controls.Add(this.tntCheck);
             this.homePanel.Controls.Add(this.deathAdd);
+            this.homePanel.Controls.Add(this.label27);
             this.homePanel.Controls.Add(this.ownSub);
             this.homePanel.Controls.Add(this.ownAdd);
             this.homePanel.Controls.Add(this.sellSub);
@@ -571,19 +783,8 @@
             this.homePanel.Controls.Add(this.label25);
             this.homePanel.Controls.Add(this.label23);
             this.homePanel.Controls.Add(this.resetButton);
-            this.homePanel.Controls.Add(this.label33);
-            this.homePanel.Controls.Add(this.specialCannon);
-            this.homePanel.Controls.Add(this.label32);
-            this.homePanel.Controls.Add(this.cannonCheck);
-            this.homePanel.Controls.Add(this.label31);
-            this.homePanel.Controls.Add(this.bananaCheck);
-            this.homePanel.Controls.Add(this.label30);
-            this.homePanel.Controls.Add(this.plankCheck);
-            this.homePanel.Controls.Add(this.label29);
             this.homePanel.Controls.Add(this.nonTNTCheck);
             this.homePanel.Controls.Add(this.label28);
-            this.homePanel.Controls.Add(this.tntCheck);
-            this.homePanel.Controls.Add(this.label27);
             this.homePanel.Controls.Add(this.mbCheck);
             this.homePanel.Controls.Add(this.label26);
             this.homePanel.Controls.Add(this.label22);
@@ -613,10 +814,224 @@
             this.homePanel.Controls.Add(this.label4);
             this.homePanel.Controls.Add(this.totalSloop);
             this.homePanel.Controls.Add(this.label5);
+            this.homePanel.Controls.Add(this.crierCountLabel);
             this.homePanel.Location = new System.Drawing.Point(222, 32);
             this.homePanel.Name = "homePanel";
             this.homePanel.Size = new System.Drawing.Size(867, 388);
             this.homePanel.TabIndex = 11;
+            // 
+            // maxteamsPanel
+            // 
+            this.maxteamsPanel.Controls.Add(this.specialCombo);
+            this.maxteamsPanel.Controls.Add(this.label53);
+            this.maxteamsPanel.Controls.Add(this.cannonCombo);
+            this.maxteamsPanel.Controls.Add(this.bananaCombo);
+            this.maxteamsPanel.Controls.Add(this.planksCombo);
+            this.maxteamsPanel.Controls.Add(this.tntCombo);
+            this.maxteamsPanel.Controls.Add(this.label48);
+            this.maxteamsPanel.Controls.Add(this.label49);
+            this.maxteamsPanel.Controls.Add(this.label50);
+            this.maxteamsPanel.Controls.Add(this.label51);
+            this.maxteamsPanel.Controls.Add(this.label52);
+            this.maxteamsPanel.Location = new System.Drawing.Point(0, 293);
+            this.maxteamsPanel.Name = "maxteamsPanel";
+            this.maxteamsPanel.Size = new System.Drawing.Size(867, 100);
+            this.maxteamsPanel.TabIndex = 80;
+            // 
+            // specialCombo
+            // 
+            this.specialCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.specialCombo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.specialCombo.FormattingEnabled = true;
+            this.specialCombo.Location = new System.Drawing.Point(602, 59);
+            this.specialCombo.Name = "specialCombo";
+            this.specialCombo.Size = new System.Drawing.Size(54, 27);
+            this.specialCombo.TabIndex = 50;
+            this.specialCombo.SelectedIndexChanged += new System.EventHandler(this.specialCombo_SelectedIndexChanged);
+            // 
+            // label53
+            // 
+            this.label53.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label53.Image = ((System.Drawing.Image)(resources.GetObject("label53.Image")));
+            this.label53.Location = new System.Drawing.Point(579, 61);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(23, 25);
+            this.label53.TabIndex = 51;
+            // 
+            // cannonCombo
+            // 
+            this.cannonCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cannonCombo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cannonCombo.FormattingEnabled = true;
+            this.cannonCombo.Location = new System.Drawing.Point(431, 59);
+            this.cannonCombo.Name = "cannonCombo";
+            this.cannonCombo.Size = new System.Drawing.Size(54, 27);
+            this.cannonCombo.TabIndex = 49;
+            this.cannonCombo.SelectedIndexChanged += new System.EventHandler(this.cannonCombo_SelectedIndexChanged);
+            // 
+            // bananaCombo
+            // 
+            this.bananaCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bananaCombo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bananaCombo.FormattingEnabled = true;
+            this.bananaCombo.Location = new System.Drawing.Point(340, 60);
+            this.bananaCombo.Name = "bananaCombo";
+            this.bananaCombo.Size = new System.Drawing.Size(54, 27);
+            this.bananaCombo.TabIndex = 48;
+            this.bananaCombo.SelectedIndexChanged += new System.EventHandler(this.bananaCombo_SelectedIndexChanged);
+            // 
+            // planksCombo
+            // 
+            this.planksCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.planksCombo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.planksCombo.FormattingEnabled = true;
+            this.planksCombo.Location = new System.Drawing.Point(520, 59);
+            this.planksCombo.Name = "planksCombo";
+            this.planksCombo.Size = new System.Drawing.Size(54, 27);
+            this.planksCombo.TabIndex = 47;
+            this.planksCombo.SelectedIndexChanged += new System.EventHandler(this.planksCombo_SelectedIndexChanged);
+            // 
+            // tntCombo
+            // 
+            this.tntCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tntCombo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tntCombo.FormattingEnabled = true;
+            this.tntCombo.Location = new System.Drawing.Point(242, 59);
+            this.tntCombo.Name = "tntCombo";
+            this.tntCombo.Size = new System.Drawing.Size(54, 27);
+            this.tntCombo.TabIndex = 46;
+            this.tntCombo.SelectedIndexChanged += new System.EventHandler(this.tntCombo_SelectedIndexChanged);
+            // 
+            // label48
+            // 
+            this.label48.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label48.Image = global::ThePirateGames.Properties.Resources.cannonBall_20x20;
+            this.label48.Location = new System.Drawing.Point(400, 61);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(34, 25);
+            this.label48.TabIndex = 43;
+            // 
+            // label49
+            // 
+            this.label49.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label49.Image = global::ThePirateGames.Properties.Resources.banana_20x20;
+            this.label49.Location = new System.Drawing.Point(302, 60);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(41, 25);
+            this.label49.TabIndex = 41;
+            // 
+            // label50
+            // 
+            this.label50.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label50.Image = global::ThePirateGames.Properties.Resources.Plank_2_10x20;
+            this.label50.Location = new System.Drawing.Point(496, 61);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(23, 25);
+            this.label50.TabIndex = 39;
+            // 
+            // label51
+            // 
+            this.label51.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label51.Image = global::ThePirateGames.Properties.Resources.TNT_20x20;
+            this.label51.Location = new System.Drawing.Point(211, 60);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(35, 25);
+            this.label51.TabIndex = 37;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label52.Location = new System.Drawing.Point(402, 21);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(62, 28);
+            this.label52.TabIndex = 33;
+            this.label52.Text = "Most";
+            // 
+            // label47
+            // 
+            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label47.Location = new System.Drawing.Point(383, 380);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(100, 2);
+            this.label47.TabIndex = 79;
+            // 
+            // label33
+            // 
+            this.label33.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label33.Image = ((System.Drawing.Image)(resources.GetObject("label33.Image")));
+            this.label33.Location = new System.Drawing.Point(508, 351);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(15, 25);
+            this.label33.TabIndex = 45;
+            // 
+            // teamsPanel
+            // 
+            this.teamsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.teamsPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.teamsPanel.Controls.Add(this.teamStartButton);
+            this.teamsPanel.Controls.Add(this.teamBox);
+            this.teamsPanel.Controls.Add(this.label45);
+            this.teamsPanel.Location = new System.Drawing.Point(310, 6);
+            this.teamsPanel.Name = "teamsPanel";
+            this.teamsPanel.Size = new System.Drawing.Size(191, 64);
+            this.teamsPanel.TabIndex = 78;
+            this.teamsPanel.Visible = false;
+            // 
+            // teamStartButton
+            // 
+            this.teamStartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.teamStartButton.Location = new System.Drawing.Point(132, 13);
+            this.teamStartButton.Name = "teamStartButton";
+            this.teamStartButton.Size = new System.Drawing.Size(46, 32);
+            this.teamStartButton.TabIndex = 2;
+            this.teamStartButton.Text = "-->";
+            this.teamStartButton.UseVisualStyleBackColor = true;
+            this.teamStartButton.Click += new System.EventHandler(this.teamStartButton_Click);
+            // 
+            // teamBox
+            // 
+            this.teamBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.teamBox.FormattingEnabled = true;
+            this.teamBox.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.teamBox.Location = new System.Drawing.Point(27, 26);
+            this.teamBox.Name = "teamBox";
+            this.teamBox.Size = new System.Drawing.Size(42, 29);
+            this.teamBox.TabIndex = 1;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(17, 2);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(69, 21);
+            this.label45.TabIndex = 0;
+            this.label45.Text = "Teams?";
+            // 
+            // specialCannon
+            // 
+            this.specialCannon.AutoSize = true;
+            this.specialCannon.Enabled = false;
+            this.specialCannon.Location = new System.Drawing.Point(529, 357);
+            this.specialCannon.Name = "specialCannon";
+            this.specialCannon.Size = new System.Drawing.Size(15, 14);
+            this.specialCannon.TabIndex = 44;
+            this.specialCannon.UseVisualStyleBackColor = true;
+            this.specialCannon.CheckedChanged += new System.EventHandler(this.specialCannon_CheckedChanged);
             // 
             // label44
             // 
@@ -625,6 +1040,16 @@
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(175, 2);
             this.label44.TabIndex = 77;
+            // 
+            // label32
+            // 
+            this.label32.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label32.Image = global::ThePirateGames.Properties.Resources.cannonBall_20x20;
+            this.label32.Location = new System.Drawing.Point(462, 351);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(19, 25);
+            this.label32.TabIndex = 43;
             // 
             // pugsSub
             // 
@@ -640,6 +1065,17 @@
             this.pugsSub.Visible = false;
             this.pugsSub.Click += new System.EventHandler(this.pugsSub_Click);
             // 
+            // cannonCheck
+            // 
+            this.cannonCheck.AutoSize = true;
+            this.cannonCheck.Enabled = false;
+            this.cannonCheck.Location = new System.Drawing.Point(487, 357);
+            this.cannonCheck.Name = "cannonCheck";
+            this.cannonCheck.Size = new System.Drawing.Size(15, 14);
+            this.cannonCheck.TabIndex = 42;
+            this.cannonCheck.UseVisualStyleBackColor = true;
+            this.cannonCheck.CheckedChanged += new System.EventHandler(this.cannonCheck_CheckedChanged);
+            // 
             // pigsAdd
             // 
             this.pigsAdd.FlatAppearance.BorderSize = 0;
@@ -653,6 +1089,16 @@
             this.pigsAdd.UseVisualStyleBackColor = true;
             this.pigsAdd.Visible = false;
             this.pigsAdd.Click += new System.EventHandler(this.pigsAdd_Click);
+            // 
+            // label31
+            // 
+            this.label31.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label31.Image = global::ThePirateGames.Properties.Resources.banana_20x20;
+            this.label31.Location = new System.Drawing.Point(364, 351);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(29, 25);
+            this.label31.TabIndex = 41;
             // 
             // snakeSub
             // 
@@ -668,6 +1114,17 @@
             this.snakeSub.Visible = false;
             this.snakeSub.Click += new System.EventHandler(this.snakeSub_Click);
             // 
+            // bananaCheck
+            // 
+            this.bananaCheck.AutoSize = true;
+            this.bananaCheck.Enabled = false;
+            this.bananaCheck.Location = new System.Drawing.Point(399, 357);
+            this.bananaCheck.Name = "bananaCheck";
+            this.bananaCheck.Size = new System.Drawing.Size(15, 14);
+            this.bananaCheck.TabIndex = 40;
+            this.bananaCheck.UseVisualStyleBackColor = true;
+            this.bananaCheck.CheckedChanged += new System.EventHandler(this.bananaCheck_CheckedChanged);
+            // 
             // snakeAdd
             // 
             this.snakeAdd.FlatAppearance.BorderSize = 0;
@@ -681,6 +1138,16 @@
             this.snakeAdd.UseVisualStyleBackColor = true;
             this.snakeAdd.Visible = false;
             this.snakeAdd.Click += new System.EventHandler(this.snakeAdd_Click);
+            // 
+            // label30
+            // 
+            this.label30.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label30.Image = global::ThePirateGames.Properties.Resources.Plank_2_10x20;
+            this.label30.Location = new System.Drawing.Point(423, 351);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(12, 25);
+            this.label30.TabIndex = 39;
             // 
             // chickenSub
             // 
@@ -696,6 +1163,17 @@
             this.chickenSub.Visible = false;
             this.chickenSub.Click += new System.EventHandler(this.chickenSub_Click);
             // 
+            // plankCheck
+            // 
+            this.plankCheck.AutoSize = true;
+            this.plankCheck.Enabled = false;
+            this.plankCheck.Location = new System.Drawing.Point(443, 357);
+            this.plankCheck.Name = "plankCheck";
+            this.plankCheck.Size = new System.Drawing.Size(15, 14);
+            this.plankCheck.TabIndex = 38;
+            this.plankCheck.UseVisualStyleBackColor = true;
+            this.plankCheck.CheckedChanged += new System.EventHandler(this.plankCheck_CheckedChanged);
+            // 
             // chickenAdd
             // 
             this.chickenAdd.FlatAppearance.BorderSize = 0;
@@ -709,6 +1187,16 @@
             this.chickenAdd.UseVisualStyleBackColor = true;
             this.chickenAdd.Visible = false;
             this.chickenAdd.Click += new System.EventHandler(this.chickenAdd_Click);
+            // 
+            // label29
+            // 
+            this.label29.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label29.Image = global::ThePirateGames.Properties.Resources.TNT_20x20;
+            this.label29.Location = new System.Drawing.Point(322, 351);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(18, 25);
+            this.label29.TabIndex = 37;
             // 
             // deathSub
             // 
@@ -724,6 +1212,17 @@
             this.deathSub.Visible = false;
             this.deathSub.Click += new System.EventHandler(this.deathSub_Click);
             // 
+            // tntCheck
+            // 
+            this.tntCheck.AutoSize = true;
+            this.tntCheck.Enabled = false;
+            this.tntCheck.Location = new System.Drawing.Point(346, 357);
+            this.tntCheck.Name = "tntCheck";
+            this.tntCheck.Size = new System.Drawing.Size(15, 14);
+            this.tntCheck.TabIndex = 34;
+            this.tntCheck.UseVisualStyleBackColor = true;
+            this.tntCheck.CheckedChanged += new System.EventHandler(this.tntCheck_CheckedChanged);
+            // 
             // deathAdd
             // 
             this.deathAdd.FlatAppearance.BorderSize = 0;
@@ -737,6 +1236,18 @@
             this.deathAdd.UseVisualStyleBackColor = true;
             this.deathAdd.Visible = false;
             this.deathAdd.Click += new System.EventHandler(this.deathAdd_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label27.Location = new System.Drawing.Point(402, 316);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(62, 28);
+            this.label27.TabIndex = 33;
+            this.label27.Text = "Most";
             // 
             // ownSub
             // 
@@ -1013,101 +1524,6 @@
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.label33.Location = new System.Drawing.Point(548, 355);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(191, 25);
-            this.label33.TabIndex = 45;
-            this.label33.Text = "Special Cannon Balls";
-            // 
-            // specialCannon
-            // 
-            this.specialCannon.AutoSize = true;
-            this.specialCannon.Location = new System.Drawing.Point(745, 361);
-            this.specialCannon.Name = "specialCannon";
-            this.specialCannon.Size = new System.Drawing.Size(15, 14);
-            this.specialCannon.TabIndex = 44;
-            this.specialCannon.UseVisualStyleBackColor = true;
-            this.specialCannon.CheckedChanged += new System.EventHandler(this.specialCannon_CheckedChanged);
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.label32.Location = new System.Drawing.Point(395, 355);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(126, 25);
-            this.label32.TabIndex = 43;
-            this.label32.Text = "Cannon Balls";
-            // 
-            // cannonCheck
-            // 
-            this.cannonCheck.AutoSize = true;
-            this.cannonCheck.Location = new System.Drawing.Point(527, 361);
-            this.cannonCheck.Name = "cannonCheck";
-            this.cannonCheck.Size = new System.Drawing.Size(15, 14);
-            this.cannonCheck.TabIndex = 42;
-            this.cannonCheck.UseVisualStyleBackColor = true;
-            this.cannonCheck.CheckedChanged += new System.EventHandler(this.cannonCheck_CheckedChanged);
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.label31.Location = new System.Drawing.Point(187, 355);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(86, 25);
-            this.label31.TabIndex = 41;
-            this.label31.Text = "Bananas";
-            // 
-            // bananaCheck
-            // 
-            this.bananaCheck.AutoSize = true;
-            this.bananaCheck.Location = new System.Drawing.Point(277, 361);
-            this.bananaCheck.Name = "bananaCheck";
-            this.bananaCheck.Size = new System.Drawing.Size(15, 14);
-            this.bananaCheck.TabIndex = 40;
-            this.bananaCheck.UseVisualStyleBackColor = true;
-            this.bananaCheck.CheckedChanged += new System.EventHandler(this.bananaCheck_CheckedChanged);
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.label30.Location = new System.Drawing.Point(298, 355);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(70, 25);
-            this.label30.TabIndex = 39;
-            this.label30.Text = "Planks";
-            // 
-            // plankCheck
-            // 
-            this.plankCheck.AutoSize = true;
-            this.plankCheck.Location = new System.Drawing.Point(374, 361);
-            this.plankCheck.Name = "plankCheck";
-            this.plankCheck.Size = new System.Drawing.Size(15, 14);
-            this.plankCheck.TabIndex = 38;
-            this.plankCheck.UseVisualStyleBackColor = true;
-            this.plankCheck.CheckedChanged += new System.EventHandler(this.plankCheck_CheckedChanged);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.label29.Location = new System.Drawing.Point(108, 355);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(52, 25);
-            this.label29.TabIndex = 37;
-            this.label29.Text = "TNT";
-            // 
             // nonTNTCheck
             // 
             this.nonTNTCheck.AutoSize = true;
@@ -1128,28 +1544,6 @@
             this.label28.Size = new System.Drawing.Size(83, 25);
             this.label28.TabIndex = 35;
             this.label28.Text = "No TNT";
-            // 
-            // tntCheck
-            // 
-            this.tntCheck.AutoSize = true;
-            this.tntCheck.Location = new System.Drawing.Point(166, 361);
-            this.tntCheck.Name = "tntCheck";
-            this.tntCheck.Size = new System.Drawing.Size(15, 14);
-            this.tntCheck.TabIndex = 34;
-            this.tntCheck.UseVisualStyleBackColor = true;
-            this.tntCheck.CheckedChanged += new System.EventHandler(this.tntCheck_CheckedChanged);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label27.Location = new System.Drawing.Point(397, 322);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(62, 28);
-            this.label27.TabIndex = 33;
-            this.label27.Text = "Most";
             // 
             // mbCheck
             // 
@@ -1448,150 +1842,21 @@
             this.panelLeftTimer.Interval = 10;
             this.panelLeftTimer.Tick += new System.EventHandler(this.panelLeftTimer_Tick);
             // 
-            // label7
-            // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Location = new System.Drawing.Point(495, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(330, 2);
-            this.label7.TabIndex = 12;
-            // 
-            // label34
-            // 
-            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label34.Location = new System.Drawing.Point(39, 15);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(330, 2);
-            this.label34.TabIndex = 11;
-            // 
-            // label35
-            // 
-            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label35.Location = new System.Drawing.Point(723, 198);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(250, 2);
-            this.label35.TabIndex = 13;
-            // 
-            // label46
-            // 
-            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label46.Location = new System.Drawing.Point(816, 207);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(1, 20);
-            this.label46.TabIndex = 78;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(793, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(668, 373);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::ThePirateGames.Properties.Resources.rulesIconTog;
-            this.button3.Location = new System.Drawing.Point(823, 203);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(29, 24);
-            this.button3.TabIndex = 79;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::ThePirateGames.Properties.Resources.audioMute;
-            this.button2.Location = new System.Drawing.Point(781, 203);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(29, 24);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(-1, 249);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(222, 72);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Hotkeys";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::ThePirateGames.Properties.Resources.rulesicon;
-            this.button4.Location = new System.Drawing.Point(0, 171);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(222, 72);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Rules";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::ThePirateGames.Properties.Resources.homeIcon;
-            this.button1.Location = new System.Drawing.Point(0, 93);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(222, 72);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Home";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ThePirateGames.Properties.Resources.pirateLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 79);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // timer3
             // 
             this.timer3.Interval = 10;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
-            // rulesLabel
+            // crierCountLabel
             // 
-            this.rulesLabel.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rulesLabel.Location = new System.Drawing.Point(334, 0);
-            this.rulesLabel.Name = "rulesLabel";
-            this.rulesLabel.Size = new System.Drawing.Size(165, 77);
-            this.rulesLabel.TabIndex = 1;
-            this.rulesLabel.Text = "Rules";
+            this.crierCountLabel.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.crierCountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.crierCountLabel.Location = new System.Drawing.Point(484, 78);
+            this.crierCountLabel.Name = "crierCountLabel";
+            this.crierCountLabel.Size = new System.Drawing.Size(48, 24);
+            this.crierCountLabel.TabIndex = 81;
+            this.crierCountLabel.Text = "600";
+            this.crierCountLabel.Visible = false;
             // 
             // Form1
             // 
@@ -1612,16 +1877,22 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.timerBox.ResumeLayout(false);
             this.timerBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.hotkeyPanel.ResumeLayout(false);
             this.hotkeyPanel.PerformLayout();
             this.rulesPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.homePanel.ResumeLayout(false);
             this.homePanel.PerformLayout();
+            this.maxteamsPanel.ResumeLayout(false);
+            this.maxteamsPanel.PerformLayout();
+            this.teamsPanel.ResumeLayout(false);
+            this.teamsPanel.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1747,6 +2018,27 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Label rulesLabel;
+        private System.Windows.Forms.Panel teamsPanel;
+        private System.Windows.Forms.ComboBox teamBox;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Button teamStartButton;
+        private System.Windows.Forms.Panel maxteamsPanel;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.ComboBox specialCombo;
+        private System.Windows.Forms.ComboBox cannonCombo;
+        private System.Windows.Forms.ComboBox bananaCombo;
+        private System.Windows.Forms.ComboBox planksCombo;
+        private System.Windows.Forms.ComboBox tntCombo;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label crierCountLabel;
     }
 }
 

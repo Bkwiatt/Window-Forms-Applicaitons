@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ThePirateGames.exe" size="20638608">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ThePirateGames.exe" size="23839120">
       <assemblyIdentity name="ThePirateGames" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZbF6727IxQ0cMv9p2+7347bz0zQlK9wZow0ErfGXaPI=</dsig:DigestValue>
+        <dsig:DigestValue>uIeowHXe4emiJyHgydgsK8tQW342VXVh1qDNgdHbB0A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

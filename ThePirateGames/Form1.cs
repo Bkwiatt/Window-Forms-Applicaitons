@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
@@ -12,6 +14,7 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
 using System.Windows.Media;
+using System.Xml.Serialization;
 
 namespace ThePirateGames
 {
@@ -22,11 +25,13 @@ namespace ThePirateGames
         [DllImport("user32.dll")] private static extern int UnregisterHotKey(IntPtr hwnd, int id);
 
         int total = 0;
+        string numTeams = "";
         int hours, minutes, seconds;
-        public int crierCount = 0;
+        public int crierCount = 600;
         public System.Media.SoundPlayer player;
         int sloops = 0, brigs = 0, galleons = 0, ghostShips = 0, megalodons = 0, cryingChests = 0, sellables = 0, ownShips = 0, deaths = 0, chicken = 0, snakes = 0, pigs = 0;
-        int sloopPoints = 0, brigPoints = 0, barfightPoints = 0, galleonPoints = 0, ghostShipPoints = 0, megalodonPoints = 0, cryingChestPoints = 0, sellablePoints = 0, ownShipPoints = 0, deathPoints = 0, chickenPoints = 0, snakePoints = 0, pigPoints = 0, bananaPoints = 0, plankPoints = 0, cannonPoints = 0, scannonPoints = 0, tntPoints = 0, notntPoints = 0, megabombPoints = 0, rowboatPoitns = 0, animalPoints = 0;
+        int points1 = 0, points2 = 0, points3 = 0, points4 = 0, points5 = 0, points6 = 0, points7 = 0, points8 = 0, points9 = 0, points10 = 0, points11 = 0, points12 = 0, points13 = 0, points14 = 0, points15 = 0, sloopPoints = 0, brigPoints = 0, barfightPoints = 0, galleonPoints = 0, ghostShipPoints = 0, megalodonPoints = 0, cryingChestPoints = 0, sellablePoints = 0, ownShipPoints = 0, deathPoints = 0, chickenPoints = 0, snakePoints = 0, pigPoints = 0, bananaPoints = 0, plankPoints = 0, cannonPoints = 0, scannonPoints = 0, tntPoints = 0, notntPoints = 0, megabombPoints = 0, rowboatPoitns = 0, animalPoints = 0;
+
 
 
 
@@ -34,6 +39,8 @@ namespace ThePirateGames
         public bool crierMult = false;
         public bool chalComplete = false;
         public bool rulessoundOn = true;
+        public bool gameStart = false;
+        private bool gameOver = false;
 
         //Booleans for menu button animation
         public bool b1 = false;
@@ -91,6 +98,14 @@ namespace ThePirateGames
             panelLeft.Top = button1.Top;
             button1.BackColor = System.Drawing.Color.Gray;
 
+            var pos = this.PointToScreen(timer.Location);
+            pos = pictureBox1.PointToClient(pos);
+            timer.Parent = pictureBox4;
+            timer.Location = pos;
+            timer.BackColor = System.Drawing.Color.Transparent;
+
+            maxteamsPanel.Visible = false;
+
             panelLeft.Height = button1.Height;
             panelLeft.Top = button1.Top;
 
@@ -121,6 +136,7 @@ namespace ThePirateGames
             //pigsAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             //pugsSub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
         }
+
 
         //Edit Button Functionality
         private void sloopAdd_Click(object sender, EventArgs e)
@@ -425,6 +441,19 @@ namespace ThePirateGames
         }
 
         private const int CS_DROPSHADOW = 0x00020000;
+
+        private void label47_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void pictureBox3_MouseClick(object sender, MouseEventArgs e)
+        {
+            //form2 = new Form2();
+            //form2.Show();
+        }
+
         protected override CreateParams CreateParams
         {
             get
@@ -479,7 +508,7 @@ namespace ThePirateGames
             timer3.Start();
         }
 
-        
+
         private void timer3_Tick(object sender, EventArgs e)
         {
             if (pictureBox2.Right >= 800 && isOpen == false)
@@ -499,12 +528,175 @@ namespace ThePirateGames
             }
         }
 
+        //1st 2nd and 3rd place points
+        private void tntCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            points1 = 0;
+            points2 = 0;
+            points3 = 0;
+            if (tntCombo.SelectedItem.ToString() == "1st")
+            {
+
+                points1 += 3;
+                addPoints();
+            }
+            else if (tntCombo.SelectedItem.ToString() == "2nd")
+            {
+
+                points2 += 2;
+                addPoints();
+            }
+            else if (tntCombo.SelectedItem.ToString() == "3rd")
+            {
+
+                points3 += 1;
+                addPoints();
+            }
+            else
+            {
+                points1 = 0;
+                points2 = 0;
+                points3 = 0;
+                addPoints();
+            }
+        }
+
+        private void bananaCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            points4 = 0;
+            points5 = 0;
+            points6 = 0;
+            if (bananaCombo.SelectedItem.ToString() == "1st")
+            {
+                points4 += 3;
+                addPoints();
+            }
+            else if (bananaCombo.SelectedItem.ToString() == "2nd")
+            {
+                points5 += 2;
+                addPoints();
+            }
+            else if (bananaCombo.SelectedItem.ToString() == "3rd")
+            {
+                points6 += 1;
+                addPoints();
+            }
+            else
+            {
+                points4 = 0;
+                points5 = 0;
+                points6 = 0;
+                addPoints();
+            }
+        }
+
+        private void planksCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            points7 = 0;
+            points8 = 0;
+            points9 = 0;
+            if (planksCombo.SelectedItem.ToString() == "1st")
+            {
+                points7 += 3;
+                addPoints();
+            }
+            else if (planksCombo.SelectedItem.ToString() == "2nd")
+            {
+                points8 += 2;
+                addPoints();
+            }
+            else if (planksCombo.SelectedItem.ToString() == "3rd")
+            {
+                points9 += 1;
+                addPoints();
+            }
+            else
+            {
+                points7 = 0;
+                points8 = 0;
+                points9 = 0;
+                addPoints();
+            }
+        }
+
+        private void cannonCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            points10 = 0;
+            points11 = 0;
+            points12 = 0;
+            if (cannonCombo.SelectedItem.ToString() == "1st")
+            {
+                points10 += 3;
+                addPoints();
+            }
+            else if (cannonCombo.SelectedItem.ToString() == "2nd")
+            {
+                points11 += 2;
+                addPoints();
+            }
+            else if (cannonCombo.SelectedItem.ToString() == "3rd")
+            {
+                points12 += 1;
+                addPoints();
+            }
+            else
+            {
+                points10 = 0;
+                points11 = 0;
+                points12 = 0;
+                addPoints();
+            }
+        }
+
+        private void specialCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            points13 = 0;
+            points14 = 0;
+            points15 = 0;
+            if (specialCombo.SelectedItem.ToString() == "1st")
+            {
+                points13 += 3;
+                addPoints();
+            }
+            else if (specialCombo.SelectedItem.ToString() == "2nd")
+            {
+                points14 += 2;
+                addPoints();
+            }
+            else if (specialCombo.SelectedItem.ToString() == "3rd")
+            {
+                points15 += 1;
+                addPoints();
+            }
+            else
+            {
+                points13 = 0;
+                points14 = 0;
+                points15 = 0;
+                addPoints();
+            }
+        }
+
+        //---------------------------------------------------------------
+
+        private void teamStartButton_Click(object sender, EventArgs e)
+        {
+            if (teamBox.SelectedItem != null)
+            {
+                numTeams = teamBox.SelectedItem.ToString();
+                gameStart = true;
+                checkNumTeams();
+                startGame();
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             if (soundOn == true)
             {
                 soundOn = false;
                 button2.BackColor = System.Drawing.Color.Red;
+
             }
             else if (soundOn == false)
             {
@@ -529,12 +721,12 @@ namespace ThePirateGames
         private void ceezLink_MouseHover(object sender, EventArgs e)
         {
             ceezLink.ForeColor = System.Drawing.Color.Yellow;
-           
+
         }
 
         private void ceezLink_MouseLeave(object sender, EventArgs e)
         {
-            ceezLink.ForeColor = System.Drawing.Color.Gray;            
+            ceezLink.ForeColor = System.Drawing.Color.Gray;
         }
 
         private void reqLink_Click(object sender, EventArgs e)
@@ -544,7 +736,7 @@ namespace ThePirateGames
 
         private void reqLink_MouseHover(object sender, EventArgs e)
         {
-            reqLink.ForeColor = System.Drawing.Color.DodgerBlue;            
+            reqLink.ForeColor = System.Drawing.Color.DodgerBlue;
         }
 
         private void reqLink_MouseLeave(object sender, EventArgs e)
@@ -672,7 +864,7 @@ namespace ThePirateGames
         {
             if (tntCheck.Checked)
             {
-                tntPoints = 5;
+                tntPoints = 3;
                 addPoints();
 
                 if (soundOn)
@@ -1113,7 +1305,9 @@ namespace ThePirateGames
                     ownShipPoints + sellablePoints + cryingChestPoints +
                     megabombPoints + ghostShipPoints + brigPoints + sloopPoints +
                     rowboatPoitns + notntPoints + tntPoints + bananaPoints +
-                    plankPoints + cannonPoints + scannonPoints + animalPoints + barfightPoints;
+                    plankPoints + cannonPoints + scannonPoints + animalPoints + barfightPoints +
+                    points1 + points2 + points3 + points4 + points5 + points6 + points7 + points8 +
+                    points9 + points10 + points11 + points12 + points13 + points14 + points15;
 
             totalPoints.Text = total.ToString();
         }
@@ -1181,6 +1375,8 @@ namespace ThePirateGames
             }
         }
         Point lastPoint;
+
+
         public void panel5_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
@@ -1225,7 +1421,15 @@ namespace ThePirateGames
         //Reset Logic
         private void resetButton_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Are you sure you want to reset?",
+            string resetString = "Are you sure you want to reset?";
+            gameReset(resetString);
+        }
+
+
+        //Game Reset
+        private void gameReset(string resetString)
+        {
+            DialogResult dr = MessageBox.Show(resetString,
                       "Reset", MessageBoxButtons.YesNo);
 
             switch (dr)
@@ -1264,6 +1468,21 @@ namespace ThePirateGames
                     pigPoints = 0;
                     animalPoints = 0;
                     barfightPoints = 0;
+                    points1 = 0;
+                    points2 = 0;
+                    points3 = 0;
+                    points4 = 0;
+                    points5 = 0;
+                    points6 = 0;
+                    points7 = 0;
+                    points8 = 0;
+                    points9 = 0;
+                    points10 = 0;
+                    points11 = 0;
+                    points12 = 0;
+                    points13 = 0;
+                    points14 = 0;
+                    points15 = 0;
 
                     //Reset Labels
                     totalSloop.Text = sloops.ToString();
@@ -1295,6 +1514,7 @@ namespace ThePirateGames
 
                     crierMult = false;
                     chalComplete = false;
+                    gameStart = false;
 
 
                     sloopAdd.Visible = false;
@@ -1322,7 +1542,49 @@ namespace ThePirateGames
                     pigsAdd.Visible = false;
                     pugsSub.Visible = false;
 
+                    teamBox.SelectedIndex = -1;
+
+                    maxteamsPanel.Visible = false;
+
+                    tntCombo.Items.Remove("1st");
+                    tntCombo.Items.Remove("2nd");
+                    tntCombo.Items.Remove("3rd");
+                    tntCombo.Items.Remove("");
+
+                    planksCombo.Items.Remove("1st");
+                    planksCombo.Items.Remove("2nd");
+                    planksCombo.Items.Remove("3rd");
+                    planksCombo.Items.Remove("");
+
+                    bananaCombo.Items.Remove("1st");
+                    bananaCombo.Items.Remove("2nd");
+                    bananaCombo.Items.Remove("3rd");
+                    bananaCombo.Items.Remove("");
+
+                    cannonCombo.Items.Remove("1st");
+                    cannonCombo.Items.Remove("2nd");
+                    cannonCombo.Items.Remove("3rd");
+                    cannonCombo.Items.Remove("");
+
+                    specialCombo.Items.Remove("1st");
+                    specialCombo.Items.Remove("2nd");
+                    specialCombo.Items.Remove("3rd");
+                    specialCombo.Items.Remove("");
+
+                    tntCheck.Enabled = false;
+                    bananaCheck.Enabled = false;
+                    plankCheck.Enabled = false;
+                    cannonCheck.Enabled = false;
+                    specialCannon.Enabled = false;
+
+                    crierCountLabel.Visible = false;
+                    crierCount = 600;
+                    ;
+
+                    timer.Font = new Font("Old English Text MT", 80f);
+                    timer.TextAlign = ContentAlignment.MiddleLeft;
                     break;
+
                 case DialogResult.No:
                     break;
             }
@@ -1332,7 +1594,6 @@ namespace ThePirateGames
         //Timer Logic
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             if (seconds > 0)
             {
                 timer1.Interval = 1000;
@@ -1341,14 +1602,33 @@ namespace ThePirateGames
 
                 if (crierMult == true)
                 {
-                    crierCount += 1;
-                    if (crierCount == 600)
+                    crierCountLabel.Visible = true;
+                    crierCount -= 1;
+                    crierCountLabel.Text = crierCount.ToString();
+                    if (crierCount == 0)
                     {
-                        crierCount = 0;
+                        crierCount = 600;
                         cryingChestPoints += (cryingChests * 3);
                         addPoints();
-                    }
 
+                        if (soundOn)
+                        {
+                            player = new System.Media.SoundPlayer(Properties.Resources.crieraudio);
+                            player.Play();
+
+                        }
+                        
+                    }
+                }
+                else
+                {
+                    crierCountLabel.Visible = false;
+                }
+
+                if (hours == 00 && minutes == 45 && seconds == 00)
+                {
+                    player = new System.Media.SoundPlayer(Properties.Resources.hourMark);
+                    player.Play();
                 }
 
             }
@@ -1368,58 +1648,152 @@ namespace ThePirateGames
             {
                 timer1.Stop();
                 startButton.Enabled = true;
+                gameOver = true;
+                timer.Font = new Font("Old English Text MT", 50f);
+                timer.TextAlign = ContentAlignment.MiddleCenter;
                 timer.Text = "Times Up!";
 
                 player = new System.Media.SoundPlayer(Properties.Resources.timeralarm);
                 player.Play();
-            }
-            //if(cryierCount == 600)
-            //{
 
-            //}
+                //player1 = new System.Media.SoundPlayer(Properties.Resources.lowerCannons);
+                //player1.Play();
+
+            }
 
         }
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            hours = 1;
-            minutes = 30;
-            seconds = 00;
-            timer1.Start();
-            startButton.Enabled = false;
-
-            if (soundOn)
+            string resetString = "Do you want to start a new game?";
+            if (gameOver == false)
             {
-                player = new System.Media.SoundPlayer(Properties.Resources.startsound);
-                player.Play();
+                startGame();
+            }
+            else
+            {
+                gameReset(resetString);
+                startGame();
             }
 
 
-            sloopAdd.Visible = true;
-            sloopSub.Visible = true;
-            brigSub.Visible = true;
-            brigAdd.Visible = true;
-            galleonAdd.Visible = true;
-            galleonSub.Visible = true;
-            ghostAdd.Visible = true;
-            ghostSub.Visible = true;
-            megSub.Visible = true;
-            megAdd.Visible = true;
-            crierAdd.Visible = true;
-            crierSub.Visible = true;
-            sellAdd.Visible = true;
-            sellSub.Visible = true;
-            ownSub.Visible = true;
-            ownAdd.Visible = true;
-            deathAdd.Visible = true;
-            deathSub.Visible = true;
-            chickenAdd.Visible = true;
-            chickenSub.Visible = true;
-            snakeAdd.Visible = true;
-            snakeSub.Visible = true;
-            pigsAdd.Visible = true;
-            pugsSub.Visible = true;
+        }
 
+        private void startGame()
+        {
+            teamsPanel.Visible = true;
+
+            if (gameStart == true)
+            {
+                teamsPanel.Visible = false;
+
+                hours = 1;
+                minutes = 30;
+                seconds = 00;
+                timer1.Start();
+                startButton.Enabled = false;
+
+                if (soundOn)
+                {
+                    player = new System.Media.SoundPlayer(Properties.Resources.startsound);
+                    player.Play();
+                }
+
+
+                sloopAdd.Visible = true;
+                sloopSub.Visible = true;
+                brigSub.Visible = true;
+                brigAdd.Visible = true;
+                galleonAdd.Visible = true;
+                galleonSub.Visible = true;
+                ghostAdd.Visible = true;
+                ghostSub.Visible = true;
+                megSub.Visible = true;
+                megAdd.Visible = true;
+                crierAdd.Visible = true;
+                crierSub.Visible = true;
+                sellAdd.Visible = true;
+                sellSub.Visible = true;
+                ownSub.Visible = true;
+                ownAdd.Visible = true;
+                deathAdd.Visible = true;
+                deathSub.Visible = true;
+                chickenAdd.Visible = true;
+                chickenSub.Visible = true;
+                snakeAdd.Visible = true;
+                snakeSub.Visible = true;
+                pigsAdd.Visible = true;
+                pugsSub.Visible = true;
+
+                tntCheck.Enabled = true;
+                bananaCheck.Enabled = true;
+                plankCheck.Enabled = true;
+                cannonCheck.Enabled = true;
+                specialCannon.Enabled = true;
+            }
+        }
+
+
+
+
+        private void checkNumTeams()
+        {
+            if (numTeams == "2")
+            {
+                maxteamsPanel.Visible = false;
+            }
+            else if (numTeams == "3")
+            {
+                maxteamsPanel.Visible = true;
+                tntCombo.Items.Add("1st");
+                tntCombo.Items.Add("2nd");
+                tntCombo.Items.Add("");
+
+                planksCombo.Items.Add("1st");
+                planksCombo.Items.Add("2nd");
+                planksCombo.Items.Add("");
+
+                bananaCombo.Items.Add("1st");
+                bananaCombo.Items.Add("2nd");
+                bananaCombo.Items.Add("");
+
+                cannonCombo.Items.Add("1st");
+                cannonCombo.Items.Add("2nd");
+                cannonCombo.Items.Add("");
+
+                specialCombo.Items.Add("1st");
+                specialCombo.Items.Add("2nd");
+                specialCombo.Items.Add("");
+            }
+            else if (numTeams == "4" | numTeams == "5" | numTeams == "6")
+            {
+                maxteamsPanel.Visible = true;
+
+                tntCombo.Items.Add("1st");
+                tntCombo.Items.Add("2nd");
+                tntCombo.Items.Add("3rd");
+                tntCombo.Items.Add("");
+
+                planksCombo.Items.Add("1st");
+                planksCombo.Items.Add("2nd");
+                planksCombo.Items.Add("3rd");
+                planksCombo.Items.Add("");
+
+                bananaCombo.Items.Add("1st");
+                bananaCombo.Items.Add("2nd");
+                bananaCombo.Items.Add("3rd");
+                bananaCombo.Items.Add("");
+
+                cannonCombo.Items.Add("1st");
+                cannonCombo.Items.Add("2nd");
+                cannonCombo.Items.Add("3rd");
+                cannonCombo.Items.Add("");
+
+                specialCombo.Items.Add("1st");
+                specialCombo.Items.Add("2nd");
+                specialCombo.Items.Add("3rd");
+                specialCombo.Items.Add("");
+            }
         }
 
 

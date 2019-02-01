@@ -117,6 +117,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\lowerCannons.wav" />
+    <None Include="Resources\endRules.wav" />
+    <None Include="Resources\image_6_825x200.png" />
+    <None Include="Resources\rules.png" />
+    <None Include="Resources\hourMark.wav" />
+    <None Include="Resources\specialcannonball_15X15.png" />
+    <None Include="Resources\specialcannonball_10x10.png" />
+    <None Include="Resources\specialcannonball_20x20.png" />
+    <None Include="Resources\Plank_2_10x20.png" />
+    <None Include="Resources\TNT_20x20.png" />
+    <None Include="Resources\banana 20x20.png" />
+    <None Include="Resources\cannonBall_20x20.png" />
+    <None Include="Resources\TNT.png" />
+    <None Include="Resources\banana-png-clipart-12.png" />
+    <None Include="Resources\cannonBall.png" />
     <None Include="Resources\rulesIconTog.png" />
     <None Include="Resources\audioMute.png" />
     <None Include="Resources\audio-symbol-png-2_10x10.png" />

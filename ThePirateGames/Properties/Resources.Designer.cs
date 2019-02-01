@@ -90,6 +90,16 @@ namespace ThePirateGames.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap banana_20x20 {
+            get {
+                object obj = ResourceManager.GetObject("banana_20x20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream brigsound {
@@ -104,6 +114,16 @@ namespace ThePirateGames.Properties {
         internal static System.IO.UnmanagedMemoryStream buttonclick {
             get {
                 return ResourceManager.GetStream("buttonclick", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cannonBall_20x20 {
+            get {
+                object obj = ResourceManager.GetObject("cannonBall_20x20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -131,6 +151,15 @@ namespace ThePirateGames.Properties {
         internal static System.IO.UnmanagedMemoryStream deathsound {
             get {
                 return ResourceManager.GetStream("deathsound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream endRules {
+            get {
+                return ResourceManager.GetStream("endRules", resourceCulture);
             }
         }
         
@@ -169,6 +198,34 @@ namespace ThePirateGames.Properties {
             get {
                 object obj = ResourceManager.GetObject("hotkeyIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream hourMark {
+            get {
+                return ResourceManager.GetStream("hourMark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_6_825x200 {
+            get {
+                object obj = ResourceManager.GetObject("image_6_825x200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream lowerCannons {
+            get {
+                return ResourceManager.GetStream("lowerCannons", resourceCulture);
             }
         }
         
@@ -231,11 +288,31 @@ namespace ThePirateGames.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plank_2_10x20 {
+            get {
+                object obj = ResourceManager.GetObject("Plank_2_10x20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream pop {
             get {
                 return ResourceManager.GetStream("pop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rules {
+            get {
+                object obj = ResourceManager.GetObject("rules", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -287,6 +364,26 @@ namespace ThePirateGames.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap specialcannonball_10x10 {
+            get {
+                object obj = ResourceManager.GetObject("specialcannonball_10x10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap specialcannonball_15X15 {
+            get {
+                object obj = ResourceManager.GetObject("specialcannonball_15X15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream startsound {
@@ -310,6 +407,16 @@ namespace ThePirateGames.Properties {
         internal static System.IO.UnmanagedMemoryStream timeralarm {
             get {
                 return ResourceManager.GetStream("timeralarm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TNT_20x20 {
+            get {
+                object obj = ResourceManager.GetObject("TNT_20x20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

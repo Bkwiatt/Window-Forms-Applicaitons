@@ -1,4 +1,3 @@
-C:\Users\BK\source\repos\ThePirateGames\ThePirateGames\obj\Debug\ThePirateGames.csprojAssemblyReference.cache
 C:\Users\BK\source\repos\ThePirateGames\ThePirateGames\obj\Debug\ThePirateGames.Form1.resources
 C:\Users\BK\source\repos\ThePirateGames\ThePirateGames\obj\Debug\ThePirateGames.Properties.Resources.resources
 C:\Users\BK\source\repos\ThePirateGames\ThePirateGames\obj\Debug\ThePirateGames.csproj.GenerateResource.cache
